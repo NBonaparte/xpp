@@ -9,7 +9,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(PkgConfig)
 pkg_check_modules(XCBPROTO REQUIRED xcb-proto)
 
-find_package(PythonInterp 2.7 REQUIRED)
+find_package(PythonInterp 3 REQUIRED)
 find_package(XCB REQUIRED XCB ICCCM EWMH UTIL IMAGE)
 
 if(NOT PYTHON_EXECUTABLE)
